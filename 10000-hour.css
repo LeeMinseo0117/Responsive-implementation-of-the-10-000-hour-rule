@@ -217,8 +217,8 @@ body {
     margin-top: 4px;
   }
   .licat {
-    visibility: hidden;
-    height: 200px;
+    width: 241px;
+    height: 188px;
   }
   .btn4 {
     font-family: "GmarketSansMedium";
@@ -230,6 +230,7 @@ body {
     border-radius: 13px;
     box-shadow: 0px 0px 10px 0px #00000080;
     color: #5b2386;
+    margin-top: 34px;
   }
 }
 /* 브라우저 */
