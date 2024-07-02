@@ -18,6 +18,10 @@ body {
   background-color: #5b2386;
   color: #ffffff;
 }
+input,
+button {
+  border: none;
+}
 /* 모바일 */
 @media (max-width: 425px), (orientation: portrait) {
   body {
@@ -366,6 +370,7 @@ body {
     height: 66px;
     border-radius: 56px;
     box-shadow: 0px 0px 10px 0px #00000080;
+    margin-left: 18px;
   }
   .logo {
     top: 130px;
