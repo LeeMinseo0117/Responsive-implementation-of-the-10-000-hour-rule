@@ -14,76 +14,245 @@
 }
 @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
 
-body {
-  background-color: #5b2386;
-  color: #ffffff;
+:root {
+  --purple-color: #5b2386;
+  --yellow-color: #fcee21;
+  --white-color: #ffffff;
 }
 input,
 button {
   border: none;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./src/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 261px 265px;
+  padding: 60px;
+}
+.title {
+  width: 564px;
+  height: 112px;
+}
+.p1 {
+  color: #f5df4d;
+  font-family: "OTEnjoystoriesBA";
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+.p2 {
+  font-family: "GmarketSansMedium";
+  background-image: url("./src/quotes.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  font-size: 18px;
+}
+.p2 span {
+  font-weight: 700;
+  font-size: 24px;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p3 {
+  font-family: "GmarketSansMedium";
+  text-align: center;
+}
+input[type="text"],
+input[type="number"] {
+  width: 228px;
+  height: 57px;
+  border-radius: 7px;
+  font-family: "GmarketSansMedium";
+  text-align: center;
+  font-weight: 400px;
+  font-size: 24px;
+}
+.btn1 {
+  font-family: "GmarketSansMedium";
+  background-color: var(--yellow-color);
+  width: 565px;
+  height: 66px;
+  color: var(--purple-color);
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 56px;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  margin-top: 40px;
+}
+.click {
+  width: 64px;
+  height: 72px;
+  transform: translate(320px, -40px);
+}
+.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p4 {
+  font-family: "GmarketSansMedium";
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+.p4 span {
+  font-weight: 700;
+  font-size: 72px;
+  vertical-align: middle;
+}
+.buttons {
+  display: inline;
+  margin-bottom: 40px;
+}
+.btn2 {
+  font-family: "GmarketSansMedium";
+  background-color: var(--yellow-color);
+  border-radius: 56px;
+  width: 356px;
+  height: 66px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--purple-color);
+  box-shadow: 0px 0px 10px 0px #00000080;
+}
+.btn3 {
+  font-family: "GmarketSansMedium";
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--purple-color);
+  background-color: var(--white-color);
+  width: 191px;
+  height: 66px;
+  border-radius: 56px;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  margin-left: 18px;
+}
+.logo {
+  top: 130px;
+  display: block;
+  margin: auto;
+  width: 125px;
+  height: 25px;
+}
+.p5 {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+#modalOpenButton,
+#modalCloseButton {
+  cursor: pointer;
+}
+#modalContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modalContent {
+  font-family: "OTEnjoystoriesBA";
+  position: absolute;
+  background-color: var(--white-color);
+  width: 800px;
+  height: 800px;
+  color: var(--purple-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  box-shadow: 0px 0px 20px 0px #00000080;
+}
+#modalContainer.hidden {
+  display: none;
+}
+.p6 {
+  font-weight: 700;
+  font-size: 96px;
+  margin: 0;
+  margin-top: 76px;
+}
+.p6::after {
+  content: "♥♥♥";
+}
+.p7 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 4px;
+}
+.licat {
+  display: block;
+}
+.btn4 {
+  font-family: "GmarketSansMedium";
+  background-color: var(--yellow-color);
+  width: 508px;
+  height: 66px;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 56px;
+  margin-top: 74px;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  color: var(--purple-color);
+}
 /* 모바일 */
 @media (max-width: 425px), (orientation: portrait) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
   .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./src/clock.png");
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: 125px 126px;
-    padding: 60px;
   }
   .title {
     width: 267px;
     height: 53px;
   }
-
   .p1 {
-    color: #f5df4d;
-    font-family: "OTEnjoystoriesBA";
-    text-align: center;
-    font-weight: 700;
     font-size: 22px;
   }
   .p2 {
-    font-family: "GmarketSansMedium";
-    background-image: url("./src/quotes.png");
-    background-repeat: no-repeat;
-    background-position: center center;
     background-size: 100% auto;
-    text-align: center;
     font-size: 14px;
     font-weight: 400;
   }
   .p2 span {
-    font-weight: 700;
     font-size: 14px;
   }
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .p3 {
-    font-family: "GmarketSansMedium";
-    text-align: center;
     font-size: 14px;
     font-weight: 400;
   }
@@ -94,360 +263,62 @@ button {
   input[type="number"] {
     width: 156px;
     height: 37px;
-    border-radius: 7px;
-    font-family: "GmarketSansMedium";
-    text-align: center;
-    font-weight: 400px;
     font-size: 14px;
   }
   .btn1 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
     width: 241px;
     height: 68px;
-    color: #5b2386;
     font-size: 14px;
-    font-weight: 700;
     border-radius: 13px;
-    box-shadow: 0px 0px 10px 0px #00000080;
-    margin-top: 40px;
   }
   .btn1 span {
     display: block;
   }
   .click {
-    width: 64px;
-    height: 72px;
     transform: translate(150px, -50px);
   }
-  .section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .p4 {
-    font-family: "GmarketSansMedium";
-    text-align: center;
-    font-weight: 400;
     font-size: 14px;
   }
   .p4 span {
-    font-weight: 700;
     font-size: 24px;
-    vertical-align: middle;
-  }
-  .buttons {
-    display: inline;
-    margin-bottom: 40px;
   }
   .btn2 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
-    border-radius: 56px;
     width: 186px;
     height: 40px;
     font-size: 14px;
-    font-weight: 700;
-    color: #5b2386;
-    box-shadow: 0px 0px 10px 0px #00000080;
   }
   .btn3 {
-    font-family: "GmarketSansMedium";
     font-size: 14px;
-    font-weight: 700;
-    color: #5b2386;
-    background-color: #ffffff;
     width: 92px;
     height: 40px;
-    border-radius: 56px;
-    box-shadow: 0px 0px 10px 0px #00000080;
   }
   .logo {
-    top: 130px;
-    display: block;
-    margin: auto;
     width: 91px;
     height: 18px;
   }
   .p5 {
-    font-family: "Noto Sans", sans-serif;
-    text-align: center;
     font-size: 9px;
-    font-weight: 400;
     color: #ffffffb2;
-  }
-  #modalOpenButton,
-  #modalCloseButton {
-    cursor: pointer;
-  }
-  #modalContainer {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
   }
 
   #modalContent {
-    font-family: "OTEnjoystoriesBA";
-    position: absolute;
-    background-color: #ffffff;
     width: 330px;
     height: 500px;
-    color: #5b2386;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 30px;
-    box-shadow: 0px 0px 20px 0px #00000080;
-  }
-  #modalContainer.hidden {
-    display: none;
   }
   .p6 {
-    font-weight: 700;
     font-size: 64px;
-    margin: 0;
-  }
-  .p7 {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0;
-    margin-top: 4px;
   }
   .licat {
     width: 241px;
     height: 188px;
   }
   .btn4 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
     width: 241px;
     height: 68px;
-    font-weight: 700;
     font-size: 14px;
     border-radius: 13px;
-    box-shadow: 0px 0px 10px 0px #00000080;
-    color: #5b2386;
     margin-top: 34px;
-  }
-}
-/* 브라우저 */
-@media (min-width: 426px), (orientation: landscape) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-  .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./src/clock.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 261px 265px;
-    padding: 60px;
-  }
-  .title {
-    width: 564px;
-    height: 112px;
-  }
-
-  .p1 {
-    color: #f5df4d;
-    font-family: "OTEnjoystoriesBA";
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-  }
-  .p2 {
-    font-family: "GmarketSansMedium";
-    background-image: url("./src/quotes.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: 493px 96px; */
-    text-align: center;
-    font-size: 18px;
-  }
-  .p2 span {
-    font-weight: 700;
-    font-size: 24px;
-  }
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .p3 {
-    font-family: "GmarketSansMedium";
-    text-align: center;
-  }
-  input[type="text"],
-  input[type="number"] {
-    width: 228px;
-    height: 57px;
-    border-radius: 7px;
-    font-family: "GmarketSansMedium";
-    text-align: center;
-    font-weight: 400px;
-    font-size: 24px;
-  }
-  .btn1 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
-    width: 565px;
-    height: 66px;
-    color: #5b2386;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0px 0px 10px 0px #00000080;
-    margin-top: 40px;
-  }
-  .click {
-    width: 64px;
-    height: 72px;
-    transform: translate(320px, -40px);
-  }
-  .section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .p4 {
-    font-family: "GmarketSansMedium";
-    text-align: center;
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .p4 span {
-    font-weight: 700;
-    font-size: 72px;
-    vertical-align: middle;
-  }
-  .buttons {
-    display: inline;
-    margin-bottom: 40px;
-  }
-  .btn2 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
-    border-radius: 56px;
-    width: 356px;
-    height: 66px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #5b2386;
-    box-shadow: 0px 0px 10px 0px #00000080;
-  }
-  .btn3 {
-    font-family: "GmarketSansMedium";
-    font-size: 24px;
-    font-weight: 700;
-    color: #5b2386;
-    background-color: #ffffff;
-    width: 191px;
-    height: 66px;
-    border-radius: 56px;
-    box-shadow: 0px 0px 10px 0px #00000080;
-    margin-left: 18px;
-  }
-  .logo {
-    top: 130px;
-    display: block;
-    margin: auto;
-    width: 125px;
-    height: 25px;
-  }
-  .p5 {
-    font-family: "Noto Sans", sans-serif;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  #modalOpenButton,
-  #modalCloseButton {
-    cursor: pointer;
-  }
-  #modalContainer {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  #modalContent {
-    font-family: "OTEnjoystoriesBA";
-    position: absolute;
-    background-color: #ffffff;
-    width: 800px;
-    height: 800px;
-    color: #5b2386;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
-    box-shadow: 0px 0px 20px 0px #00000080;
-  }
-  #modalContainer.hidden {
-    display: none;
-  }
-  .p6 {
-    font-weight: 700;
-    font-size: 96px;
-    margin: 0;
-    margin-top: 76px;
-  }
-  .p6::after {
-    content: "♥♥♥";
-  }
-  .p7 {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0;
-    margin-top: 4px;
-  }
-  .licat {
-    display: block;
-  }
-  .btn4 {
-    font-family: "GmarketSansMedium";
-    background-color: #fcee21;
-    width: 508px;
-    height: 66px;
-    font-weight: 700;
-    font-size: 24px;
-    border-radius: 56px;
-    margin-top: 74px;
-    box-shadow: 0px 0px 10px 0px #00000080;
-    color: #5b2386;
   }
 }
